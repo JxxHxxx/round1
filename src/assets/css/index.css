@@ -1,0 +1,48 @@
+
+:root {
+    --main-color: #24447f;
+    --main-color-20: #2c5197;
+}
+
+#AppHeader {
+    background-color: var(--main-color);
+    position: relative;
+    height: 80px;
+}
+
+.AppHeaderContainer {
+    height: 100%;
+}
+
+.HorizonUnorderList {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center; /*수직 정렬 */
+}
+
+.AppHeaderItem {
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: white;
+}
+
+.CenterAppHeaderItem {
+    padding: 25.75px 40px;
+}
+
+.LeftAppHeaderItem {
+    padding: 25.75px 50px 25.75px 50px;
+    margin-left: 30px;
+}
+
+.RightAppHeaderItem {
+    padding: 25.75px 20px 25.75px 20px 
+}
+
+.AppHeaderItem:hover {
+    background-color: var(--main-color-20);
+}

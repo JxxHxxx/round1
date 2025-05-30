@@ -4,12 +4,13 @@
         <!-- <p> {{ user }}</p> -->
     </div>
     <div>
-        <div>
-            <RouterLink to="/">Home</RouterLink>
+        <!-- <div>
+            <RouterLink to="/approval">Home</RouterLink>
         </div>
         <div>
             <RouterLink to="/HelloWorld">HelloWorld</RouterLink>
         </div>
+        <RouterView /> -->
     </div>
 </template>
 
