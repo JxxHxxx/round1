@@ -1,0 +1,14 @@
+table {
+  border-collapse: collapse; /* 셀 간 간격 없애기 */
+  width: 100%; /* 필요에 따라 너비 조절 */
+}
+
+thead td {
+    text-align: center;
+}
+
+tbody tr, td {
+  text-align: left;  /* 텍스트 정렬 */
+  border: 1px solid black;      /* 선 없애기 */
+}
+
