@@ -1,10 +1,9 @@
 <template>
     <header id="AppHeader">
         <div class="AppHeaderContainer">
-            
             <ul class="HorizonUnorderList">
                 <div class="AppHeaderItem LeftAppHeaderItem">로고 자리</div>
-                <RouterLink to="#">
+                <RouterLink to="/">
                     <li class="AppHeaderItem CenterAppHeaderItem">
                         <a>홈</a>
                     </li>
@@ -14,7 +13,7 @@
                         <a>권한관리</a>
                     </li>
                 </RouterLink>
-                <RouterLink to="#">
+                <RouterLink to="/comfirm">
                     <div>
                         <li class="AppHeaderItem CenterAppHeaderItem">
                           <a>결재함</a>
@@ -42,7 +41,6 @@
                       </li>
                     </div>
                 </RouterLink>
-                
                 <div class="AppHeaderItem RightAppHeaderItem">로그인/로그아웃</div>
             </ul>
         </div>
