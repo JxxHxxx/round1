@@ -21,13 +21,11 @@
 
 <script setup>
   const data = defineProps({
-    columns : {
-        type : Array
-    },
-    tableData : {
-        type : Array
-    }
+    columns : Array,
+    tableData : Array
   });
+
+
 
 </script>
 <style lang="scss" scoped></style>
