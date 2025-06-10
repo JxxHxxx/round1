@@ -27,7 +27,7 @@
                       </li>
                     </div>
                 </RouterLink>
-                <RouterLink to="#">
+                <RouterLink to="/admin">
                     <div>
                         <li class="AppHeaderItem CenterAppHeaderItem">
                         <a>관리자</a>

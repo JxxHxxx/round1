@@ -11,4 +11,10 @@ module.exports = {
       parser: "@babel/eslint-parser",
       requireConfigFile: false,
     },
+    globals: {
+    defineProps: "readonly",
+    defineEmits: "readonly",
+    defineExpose: "readonly",
+    withDefaults: "readonly"
+  }
   }
