@@ -1,6 +1,6 @@
 <script setup>
-const props = defineProps(['name', 'onClick']);
+const props = defineProps(['name', 'onClick', 'className']);
 </script>
 <template>
-    <button @click="onClick">{{ props.name }}</button>
+    <button :class="props.className" @click="onClick">{{ props.name }}</button>
 </template>
