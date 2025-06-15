@@ -16,29 +16,29 @@
                 <RouterLink to="/comfirm">
                     <div>
                         <li class="AppHeaderItem CenterAppHeaderItem">
-                          <a>결재함</a>
+                            <a>컴포넌트 설계</a>
                         </li>
                     </div>
                 </RouterLink>
                 <RouterLink to="#">
                     <div>
                         <li class="AppHeaderItem CenterAppHeaderItem">
-                        <a>공지사항</a>
-                      </li>
+                            <a>공지사항</a>
+                        </li>
                     </div>
                 </RouterLink>
                 <RouterLink to="/admin">
                     <div>
                         <li class="AppHeaderItem CenterAppHeaderItem">
-                        <a>관리자</a>
-                      </li>
+                            <a>slot</a>
+                        </li>
                     </div>
                 </RouterLink>
                 <RouterLink to="#">
                     <div>
                         <li class="AppHeaderItem CenterAppHeaderItem">
-                        <a>결재관리</a>
-                      </li>
+                            <a>결재관리</a>
+                        </li>
                     </div>
                 </RouterLink>
                 <div class="AppHeaderItem RightAppHeaderItem">로그인/로그아웃</div>
@@ -50,6 +50,4 @@
 <script setup>
 
 </script>
-<style>
-    
-</style>
+<style></style>

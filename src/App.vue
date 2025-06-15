@@ -7,6 +7,7 @@ import AppHeader from './components/layout/AppHeader.vue';
 import './assets/css/index.css';
 import './assets/css/tag.css';
 import './assets/css/table.css';
+import './assets/css/main.css';
 
 export default {
   name: 'App',
@@ -16,6 +17,4 @@ export default {
 }
 </script>
 
-<style>
-  
-</style>
+<style></style>

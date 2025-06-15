@@ -1,0 +1,8 @@
+.defaultBorderBox {
+  border: 1px dashed gray;
+  border-radius: 5px;
+}
+
+.defaultInnerSpace {
+    padding: 20px;
+}

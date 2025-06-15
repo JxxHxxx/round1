@@ -3,16 +3,18 @@
         <table>
             <thead>
                 <tr>
-                    <td  v-for="(item, index) in data.columns" :key="index">{{ item }}</td>
+                    <td v-if="$slots.checkAllBox && $slots.checkBox">
+                        <slot name="checkAllBox"></slot>
+                    </td>
+                    <td v-for="(columnName, index) in columnNameList" :key="index">{{ columnName }}</td>
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="(item, index) in data.tableData" :key="index">
-                   <td>{{ item.systemName }}</td>
-                   <td>{{ item.ownerName }}</td>
-                   <td>{{ item.roleName }}</td>
-                   <td>{{ item.startDate }}</td>
-                   <td>{{ item.endDate }}</td>
+                <tr v-for="(item, index) in props.data" :key="index" :onclick="() => onClick(item)">
+                    <slot name="checkBox"></slot>
+                    <td v-for="(key) in columnKeyList" :key="key">
+                        {{ item[key] }}
+                    </td>
                 </tr>
             </tbody>
         </table>
@@ -20,11 +22,14 @@
 </template>
 
 <script setup>
-  const data = defineProps({
-    columns : Array,
-    tableData : Array
-  });
+const props = defineProps({
+    columns: Array,
+    data: Array,
+    onClick: Function
+});
 
+const columnNameList = props.columns.map(col => Object.values(col)[0]);
+const columnKeyList = props.columns.map(col => Object.keys(col)[0]);
 
 
 </script>
